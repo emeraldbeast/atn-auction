@@ -1,0 +1,30 @@
+ok we need to make an auction site
+THe flow is as follows 
+
+There will be some teams, and like assume 100 players or so, now all 100 wont be in the same pool. Some will be A grade, some B,C,D
+The pool segregation must be done by admin, so admin can enter player name and the grade of player 
+
+Admin can enter the teams which are there, and their starting budgets (ASsume 10 teams and 4 mill as a test dataset)
+
+Now how the auction goes about
+Auction starts from Group A players, and in Group A, a name will be randomly drawn
+This player will have some base price, and then increments happen with each bid.
+Lets say base is 200k, increment is 50k till 1M, and then increment is 100k till the end
+These rules will differ for each group, and must be set by admin 
+
+Now when a player is displayed on screen, the bidding keeps going on (We DO NOT need to simulate the bidding, that will happen physically)
+After the bidding is done, the player is entered into the team who bought him, and the price for which he bought.
+
+Note that there are 3 different types of users 
+1) Admin 
+2) Auction Organiser
+3) General Public (includes the Team Managers as well)
+
+The Admin can enter/delete any data at any point of time
+The Organiser will be the one whose laptop will be shown on the screen, so like when Group A auction is going on, then the organiser's screen should randomly select a name from the yet to be sold roster
+The Organiser will conduct the auction physically, and then after that, the Organiser must enter the details of which team won the bet, by how much (Include the case of Unsold as well)
+The Organiser will then move on to the next person in the pool, or the next pool, depending on the situation
+The Team Managers will be able to see their remaining budget, and the players they bought 
+The General Public will be able to see all the teams along with the players that they bought, and the budget that every team has left. The general public should also be able to see which player is currently being bid upon
+
+Apart from all of this, a history must be maintained of which players have been bid upon yet, so like a stack. Additionally, Statistics must be available
